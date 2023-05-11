@@ -85,19 +85,19 @@ function CustomonClick(e){
          let row = table.insertRow(1);
         for(let i of li1){
        let cell1 = row.insertCell(0);
-        cell1.innerHTML= i
+        cell1.innerHTML= i.textContent
       }
       for(let x of li2){
         let cell2 = row.insertCell(1);
-         cell2.innerHTML= x
+         cell2.innerHTML= x.textContent
        }
        for(let y of li3){
         let cell3 = row.insertCell(2);
-         cell3.innerHTML= y
+         cell3.innerHTML= y.textContent
        }
        for(let z of li4){
         let cell4 = row.insertCell(3);
-         cell4.innerHTML= z
+         cell4.innerHTML= z.textContent
        }
       
     }
