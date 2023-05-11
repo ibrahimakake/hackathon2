@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="first">
+            <h2>Do you want to be more productive ?</h2>
+        </div>
+        <div class="second">
+            <h4>This platform is built to help you organize your daily activitiesand by prioritizing your TO-DO List  </h4>
+        </div>
+    </header>
+    <section>
+        <form action="#">
+            <div>
+                <input type ="text" id="todoList" placeholder="Add To-Do list" >
+
+            </div>
+            <div id="label1">
+                <label for="importance"> How urgent it is to you:</label>
+                <select name="select2" id="select1">
+                    <option value="urgent"> urgent</option>
+                    <option value="notUrgent"> Not urgent</option>
+                 </select>
+            </div>
+            <div id="label2">
+                <label for="importance"> How important it is to you:</label>
+                <select name="select1" id="select2">
+                    <option value="important"> important</option>
+                    <option value="notImportant"> Not important</option>
+                 </select>
+            </div>
+            
+            <div>
+                <input type="submit" id="Add" title="Add" value="Add">
+            </div>
+            
+        </form>
+        <div class="grid-container">
+            <div class="grid-item" id="urgent-important"></div>
+            <div class="grid-item" id="urgent">URGENT</div>
+            <div class="grid-item" id="not-urgent">NOT URGENT</div>  
+            <div class="grid-item" id="important">IMPORTANT</div>
+            <div class="grid-item">
+                <ul id="urg-imp"></ul>
+            </div>
+            <div class="grid-item">
+                <ul id="notUrg-imp"></ul>
+            </div>  
+            <div class="grid-item" id="not-important">NOT IMPORTANT</div>
+            <div class="grid-item">
+                <ul id="notImp-urg"></ul>
+            </div>
+            <div class="grid-item">
+                <ul id="notImp-notUrg"></ul>
+            </div>
+
+            
+        </div>
+          <div class="btn">
+          <button id="final-result">Let see The result</button>
+        </div>
+          <table id="table">
+            <thead>
+              <tr>
+                
+                <th scope="col"> <p><i class="fa-solid fa-circle-check"></i></p>
+                    <h3>DO NOW !</h3>
+                </th>
+                <th scope="col"><p><i class="fa-regular fa-calendar-days"></i></p>
+                    <h3>Scheduale</h3>
+                </th>
+                <th scope="col"> <p><i class="fa-solid fa-user-plus"></i></p>
+                    <h3>Delegate</h3>
+                </th>
+                <th scope="col">
+                    <p><i class="fa-solid fa-trash-can"></i></i></p>
+                   <h3>Delete</h3> 
+                </th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="tr1">
+                
+              </tr>
+             
+            </tbody>
+          </table>
+          
+    </section>
+
+    <script src="script.js" ></script>
+</body>
+</html>
+
+<!--
+    <th scope="row" >1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+-->
